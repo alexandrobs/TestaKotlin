@@ -42,6 +42,22 @@ class Testa {
             val myStr = String.format("Preco em reais: %.2f", price)
             println(myStr)
 
+            println("---------------------------------------------")
+
+            val nameBlank = "   "
+            println("nameBlank: length is " + nameBlank.length)
+            println("---")
+            println("nameBlank: isBlanck?: " + nameBlank.isBlank())
+            println("nameBlank: isEmpty? " + nameBlank.isEmpty())
+            println("nameBlanck: isNullOrEmpty? " + nameBlank.isNullOrEmpty())
+            println("nameBlanck: isNullOrBlank? " + nameBlank.isNullOrBlank())
+            println("---")
+            val nameEmpty = ""
+            println("nameEmpty: legth is " + nameEmpty.length)
+            println("nameEmpty: isBlanck? " + nameEmpty.isBlank())
+            println("nameEmpty: isEmpty? " + nameEmpty.isEmpty())
+            println("nameEmpty: isNullOrEmpty? " + nameEmpty.isNullOrEmpty())
+            println("nameEmpty: isNullOrBlank? " + nameEmpty.isNullOrBlank())
         }
     }
 }
