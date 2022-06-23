@@ -5,7 +5,7 @@ class MoreFunctions {
         fun main(args: Array<String>){
             //chamando a funcao
             println(generateAnswerString(11))
-            val stringLength: Int = stringFuncLenght("AndroidX")
+            val stringLength: Int = stringFuncLength("AndroidX")
             println(stringLength)
         }
 
@@ -48,7 +48,7 @@ class MoreFunctions {
             }
 
         //funcoes anonimas
-        val stringFuncLenght: (String) -> Int = {input ->
+        val stringFuncLength: (String) -> Int = {input ->
             input.length
         }
 
