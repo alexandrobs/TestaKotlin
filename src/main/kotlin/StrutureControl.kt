@@ -4,8 +4,8 @@ class StrutureControl {
         @JvmStatic
         fun main(args: Array<String>){
 
-            var a = 4
-            var b = 1
+            var a = 5
+            var b = 5
             var c = 3
 
             //if, else
@@ -42,6 +42,24 @@ class StrutureControl {
             var numberY = numberX ?: 0
             println("numberX: " + numberX)
             println("numberY: " + numberY)
+
+            //atribuicao
+            println("valores de a $a e b $b")
+            val maxValue = if (a > b) a else if (a < b) b else b
+            println("maxValue $maxValue")
+
+            println("valores de a $a e b $b")
+
+            val minValue = if (a > b) { println("b ($b) e o menor valor")
+                b
+            } else if (a < b) { println("a ($a) e o menor valor")
+                a
+            } else {
+                println("os valores sao iguais")
+                b
+            }
+            println(minValue)
+
         }
     }
 }
