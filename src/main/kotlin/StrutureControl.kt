@@ -60,6 +60,22 @@ class StrutureControl {
             }
             println(minValue)
 
+            //when atribuindo
+            when {
+                a > b -> {
+                    println("a e > b")
+                }
+                a != b && a > c -> {
+                    println("a e diferente b e a e > c")
+                }
+                b == 0 -> {
+                    println("b e igual a 0")
+                }
+                else -> {
+                    println("outra saida qualquer")
+                }
+            }
+
         }
     }
 }
