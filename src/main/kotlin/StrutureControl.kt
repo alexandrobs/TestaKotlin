@@ -76,6 +76,20 @@ class StrutureControl {
                 }
             }
 
+            val year = 1986.. 2022
+            //val year = 2022
+            when(year){
+                -4000.. 475 ->
+                    println("antiguidade")
+                476..1452 ->
+                    println("medieval")
+                1453..1789 ->
+                    println("moderna")
+                1900.. 2022 ->
+                    println("contemporaneo")
+                else ->
+                    println("fora do tempo")
+            }
         }
     }
 }
