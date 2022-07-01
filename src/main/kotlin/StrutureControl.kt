@@ -90,6 +90,28 @@ class StrutureControl {
                 else ->
                     println("fora do tempo")
             }
+
+            val grade = (0..10).random()
+            println(grade.getStudentStatus())
+
+
+
+            //elvis operator
+            var numA:Int? = null
+            var numB:Int? = 1
+            var numC:Int? = numA?: numB?: 0
+            println(numC)
+        }
+
+        fun Int.getStudentStatus():String{
+            println("nota $this")
+            return when(this){
+                in 0..4 -> "Reprovado"
+                in 5..7 -> "Media"
+                in 7..9 -> "Bom"
+                10 -> "Excelente"
+                else -> "Indefinido"
+            }
         }
     }
 }
