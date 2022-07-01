@@ -1,4 +1,4 @@
-class StrutureControl {
+class StructureControl {
 
     companion object {
         @JvmStatic
