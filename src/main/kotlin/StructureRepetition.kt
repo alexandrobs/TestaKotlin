@@ -34,6 +34,25 @@ class StructureRepetition {
             for (letter in text){
                 println(letter)
             }
+
+            println("-------------------------")
+
+            for (letter in text){
+                println(letter.uppercaseChar())
+            }
+
+            println("-------------------------")
+
+            val array = "Alexandro"
+            array.forEach {
+                println("oi")
+            }
+
+            println("-------------------------")
+
+            array.forEach {l ->
+                print(l + "")
+            }
         }
     }
 }
